@@ -40,7 +40,8 @@ $(function() {
             	$('#search-bar').css('background-color', '#898282');
             	$('#search-bar').css('color', 'white');
             });
-    
+            
+            //image menu : devient flou quand on passe dessus + description apparait
             $('#main-img').mouseover(function(){
                 $('#main-img-description h2').css('opacity', '1');
                 $('#main-img-description p').css('opacity', '1');
@@ -51,6 +52,13 @@ $(function() {
                 $('#main-img-description').animate({ 'height': '0'}, {queue:false, duration: 1000}).next('#main-img-description h2').css('opacity', '0');
                 $('#main-img-description p').css('opacity', '0');
                 $('#main-img img').css('filter', 'blur(0px)').css('transition', '1s');
+            });
+    
+            //login popup
+            $('#account-icon').click(function(){
+                $('#login').css('opacity', '1').css('z-index', '3').css('transition', '1s');
+                $('header').css('filter', 'blur(3px)').css('transition', '1s');
+                $('#main').css('filter', 'blur(3px)').css('transition', '1s');
             });
         });
           
