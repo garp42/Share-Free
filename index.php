@@ -16,7 +16,7 @@ require('config.php');
 		<input type="search" placeholder="Entrez votre recherche ici" id="search-bar">
 		<a href="#"><img src="icons/search24.png" id="search-icon"></a>
 		<a href="#"><img src="icons/message32-notification.png" id="message-icon"><label id="msg-ntf">1</label></a>
-		<a href="#"><img src="icons/account32-notification.png" id="account-icon"><label id="account-ntf">1</label></a>
+		<a href="#"><img src="icons/account32.png" id="account-icon"><label id="account-ntf"></label></a>
 	</header>
     <div id="login">
         

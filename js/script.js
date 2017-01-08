@@ -13,10 +13,10 @@ $(function() {
            	});
            	//icone message : changement couleur au passage souris
            	$('#message-icon').mouseover(function(){
-           		$('#message-icon').attr('src', 'icons/message32-hover.png');
+           		$('#message-icon').attr('src', 'icons/message32-hover-notification.png');
            	});
            	$('#message-icon').mouseout(function(){
-           		$('#message-icon').attr('src', 'icons/message32.png');
+           		$('#message-icon').attr('src', 'icons/message32-notification.png');
            	});
             
            	//icone de recherche : changement couleur au passage souris
@@ -56,9 +56,7 @@ $(function() {
     
             //login popup
             $('#account-icon').click(function(){
-                $('#login').css('opacity', '1').css('z-index', '3').css('transition', '1s');
-                $('header').css('filter', 'blur(3px)').css('transition', '1s');
-                $('#main').css('filter', 'blur(3px)').css('transition', '1s');
+                $('#login').css('opacity', '1').css('z-index', '3').css('transition', '1s').dialog();
             });
         });
           
